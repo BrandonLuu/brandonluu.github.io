@@ -264,8 +264,6 @@ h1, h2, h3, h4, h5, h6, figure {
 			@media screen and (max-width: $screen-sm) {
 				font-size: 14px;
 			}
-			// span{
-			// }
 		}
 		.profile-thumb{
 			background-size: cover !important;
@@ -274,6 +272,10 @@ h1, h2, h3, h4, h5, h6, figure {
 			position: relative;
 			height: 400px;
 			width: 400px;
+			@media screen and (max-width: $screen-sm) {
+				height: 200px;
+				width: 200px;
+			}
 			margin: 0 auto;
 			margin-bottom: 30px;
 			// border: 1px solid rgba($brand-white,1);

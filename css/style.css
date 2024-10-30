@@ -199,6 +199,13 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 30px;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  #fh5co-header .display-tc .profile-thumb,
+  .fh5co-cover .display-tc .profile-thumb {
+    height: 200px;
+    width: 200px;
+  }
+}
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
   color: #fff;
