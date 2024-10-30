@@ -392,9 +392,9 @@ h1, h2, h3, h4, h5, h6, figure {
 	padding: 0;
 	width: 90%;
 	float: left;
-	@media screen and (max-width: $screen-sm) {
-		margin-bottom: 3em;
-	}
+	// @media screen and (max-width: $screen-sm) {
+	// 	margin-bottom: 0em;
+	// }
 	li{
 		width: 100%;
 		float: left;
@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-about{
 	.fh5co-social-icons {
-		margin: 0;
+		margin-bottom: 2em;
 		padding: 0;
 		li {
 			padding: 0;
