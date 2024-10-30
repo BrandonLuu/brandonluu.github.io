@@ -76,7 +76,6 @@
 	};
 
 
-
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
@@ -147,3 +146,33 @@
 
 
 }());
+
+
+function stopVideo() {
+	var $frame = $('iframe#nofocusvideo');
+	// saves the current iframe source
+	var vidsrc = $frame.attr('src');
+	
+	// console.log("STOPPING VIDEO", vidsrc)
+
+	// sets the source to nothing, stopping the video
+	$frame.attr('src', '');  
+	// sets it back to the correct link so that it reloads immediately on the next window open
+	$frame.attr('src', vidsrc);
+}
+
+$('.modal').on('hidden.bs.modal', function(e) {stopVideo();});
+// $('#modalVideo').on('hidden.bs.modal', function(e) {stopVideo();})
+
+// Event listener for opening the modal and setting the video URL
+$('.video-btn').on('click', function() {
+    const videoUrl = $(this).data('video-url') + "?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479";
+	console.log(videoUrl)
+    const videoTitle = $(this).data('title');
+	const videoDescription = $(this).data('description');
+    
+    // Set the iframe src to the selected video URL
+    $('#modalVideo iframe').attr('src', videoUrl);
+    $('#modalLabel').text(videoTitle);
+	$('#modalDescription').text(videoDescription);
+});

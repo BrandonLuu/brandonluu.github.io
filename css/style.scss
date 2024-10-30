@@ -746,7 +746,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 // WORK
-.work{
+.work {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -761,7 +761,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	@media screen and (max-width: $screen-xs){
 		height: 270px;
 	}	
-	.desc{
+	.desc {
 		display: table-cell;
 		vertical-align: middle;
 		height: 270px;
@@ -1284,3 +1284,4 @@ input[type="text"] {
 		opacity: 0;
 	}
 }
+
