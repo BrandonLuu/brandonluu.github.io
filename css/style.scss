@@ -777,7 +777,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 		span{
 			display: block;
-			color: lighten($brand-black,60%);
+			color: lighten($brand-black,30%);
 			font-size: 14px;
 			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 			transition: transform 0.3s, opacity 0.3s;

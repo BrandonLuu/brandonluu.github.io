@@ -166,8 +166,8 @@ $('.modal').on('hidden.bs.modal', function(e) {stopVideo();});
 
 // Event listener for opening the modal and setting the video URL
 $('.video-btn').on('click', function() {
-    const videoUrl = $(this).data('video-url') + "?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479";
-	console.log(videoUrl)
+    const videoUrl = $(this).data('video-url') + "?title=0&byline=0&portrait=0&badge=0&loop=1&autopause=0&player_id=0&app_id=58479";
+	// console.log(videoUrl)
     const videoTitle = $(this).data('title');
 	const videoDescription = $(this).data('description');
     
