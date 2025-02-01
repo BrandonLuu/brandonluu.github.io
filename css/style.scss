@@ -9,6 +9,7 @@ $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
 $brand-primary: #002b98 !default;
+$brand-accent: #F07600;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -518,12 +519,14 @@ h1, h2, h3, h4, h5, h6, figure {
 		>div{
 			h3{
 				display: inline-block;
-				padding: 7px 15px;
+				padding: 7px 10px 7px 15px;
+				color: $brand-white;
 				font-size: 18px;
 				text-transform: uppercase;
 				letter-spacing: 5px;
 				font-weight: bold;
-				background: lighten($brand-black,90%);
+				// background: lighten($brand-black,90%);
+				background: lighten($brand-accent,5%);
 				@include border-radius(4px);
 				@media screen and (max-width: $screen-sm) {
 					float: left;
@@ -593,7 +596,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 		}
 		&.timeline-unverted{
-			text-align: right;
+			text-align: left;
 			@media screen and (max-width: $screen-sm) {
 				text-align: left;
 			}
