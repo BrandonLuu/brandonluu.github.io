@@ -73,11 +73,6 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #002b98;
 }
 
-::selection {
-  color: #fff;
-  background: #002b98;
-}
-
 #fh5co-header,
 .fh5co-cover {
   background-color: transparent;
